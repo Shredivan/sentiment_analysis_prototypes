@@ -3,6 +3,6 @@
 - All HTML files share the same JS file that controls interactive behaviour and same CSS file that controls the styles
 
 # Technology #
-- HTML for page layout
+- Bootstrap v4 for page layout
 - Vanilla CSS for styling
 - Jquery for interactivity
