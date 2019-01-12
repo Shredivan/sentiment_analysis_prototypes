@@ -16,4 +16,8 @@ $(document).ready(function(){
   $('.btn-secondary').click(function(){
     $('#exampleFormControlTextarea1').val('')
   })
+
+  $('.page-title-link').click(function(){
+    location.reload()
+  })
 });
