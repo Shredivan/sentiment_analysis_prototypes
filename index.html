@@ -11,28 +11,32 @@
     <!--  Custom Styles    -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Proxima Nova -->
+    <link rel="stylesheet" href="https://use.typekit.net/sqp6dry.css">
+
     <title>Sentiment Analyser</title>
   </head>
   <body>
+    <div class="container-fluid navbar">
+      <a href="#" class="page-title-link">Sentiment Analyser</a>
+    </div>
     <div class="container">
-      <h1>
-        <a href="#" class="page-title-link">Sentiment Analyser</a>
-      </h1>
+      <h1 class="page-header">Sentiment Analyser</h1>
       <h2 class="page-sub-heading">Automatically analyse the sentiment of pieces of text.</h2>
       <div class="form-group">
-        <h2 class="form-group-heading">Input Text</h2>
+        <h2 class="form-group-heading section-title">Input Text</h2>
         <hr>
-        <label for="exampleFormControlTextarea1">Input the text you want to analyse into the field below.</label>
+        <label for="exampleFormControlTextarea1" class="section-sub-title">Input the text you want to analyse into the field below.</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         <div class= "no-text-warning-area">
-          <p class ='no-text-warning'> yih dope </p>
+          <p class ='no-text-warning'> No text inputted to analyse </p>
         </div>
         <button type="button" class="btn btn-primary">Analyse</button>
         <button type="button" class="btn btn-secondary">Clear</button>
       </div>
       <div class="results-area">
         <div class="results-content">
-          <h2 class="results-heading">Results</h2>
+          <h2 class="results-heading section-title">Results</h2>
           <hr>
           <!-- <p class="results-content">This is test content</p> -->
         </div>

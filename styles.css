@@ -1,3 +1,59 @@
+/* Global Styles */
+body{
+  font-size: 18px;
+  font-family: proxima-nova, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+  background: black;
+  padding: 20px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Page Introduction */
+.page-header{
+  font-size: 36px;
+  font-weight: bold;
+}
+.page-sub-heading{
+  font-size: 24px;
+  font-weight: regular;
+}
+
+/* Section Titles */
+.section-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.section-sub-title{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Error Styles */
+.no-text-warning-area .no-text-warning{
+  font-size: 18px
+  font-weight: bold;
+  color: red;
+}
+
+/* Text & Image — Text Highlight */
+.text-postive{
+  background: green;
+  padding: 12px;
+}
+.text-negative{
+  background: red;
+  padding: 12px;
+}
+.text-neutral{
+  background: yellow;
+  padding: 12px;
+}
+
+/* Toggle Results */
 .results-area .results-content{
   visibility: hidden;
 }
