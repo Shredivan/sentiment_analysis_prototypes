@@ -4,6 +4,10 @@ body{
   font-family: proxima-nova, sans-serif;
 }
 
+.form-control{
+  border-radius: 0;
+}
+
 /* Navbar */
 .navbar{
   background: black;
