@@ -39,7 +39,21 @@ body{
   font-weight: normal;
 }
 
+/* Buttons */
+.btn-primary{
+  color: white;
+  background: pink;
+}
+.btn-secondary{
+  background: transparent;
+  broder 1px solid pink;
+}
+
 /* Error Styles */
+.no-text-warning-area{
+  display:none;
+}
+
 .no-text-warning-area .no-text-warning{
   font-size: 18px
   font-weight: bold;
