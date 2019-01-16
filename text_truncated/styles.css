@@ -117,7 +117,12 @@ hr{
   padding: 0;
   margin: 0;
 }
-
+.ruler-solid{
+  border-color: #e3e4ea;
+}
+.results-heading-area-ruler{
+  margin-top: 12px;
+}
 
 /* Error Styles */
 .no-text-warning-area{
