@@ -8,7 +8,7 @@ body{
 }
 
 .form-control{
-  border-radius: 0;
+  border-radius: 4;
 }
 
 /* Navbar */
@@ -42,12 +42,45 @@ body{
 /* Buttons */
 .btn-primary{
   color: white;
-  background: pink;
+  background: linear-gradient(
+      to right, #FF3C00, #FF005C
+  );
+  border: 1px solid #FF005C;
+}
+.btn-primary:hover{
+  background: linear-gradient(
+      to right, #FF005C, #FF005C
+  );
+  border: 1px solid #FF005C;
+}
+.btn-primary:active{
+  background: linear-gradient(
+      to right, #CC0049, #CC0049
+  );
+  border: 1px solid #CC0049;
 }
 .btn-secondary{
   background: transparent;
-  broder 1px solid pink;
+  border: 1px solid #FF005C;
+  color: #FF005C;
+  font-weight: bold;
 }
+.btn-secondary:hover{
+  background: rgba(255, 0, 92, .1);
+  border: 1px solid #FF005C;
+  color: #FF005C;
+}
+.btn-secondary:active{
+  background: rgba(255, 0, 92, .2);
+  border: 1px solid #FF005C;
+  color: #FF005C;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+  background: rgba(255, 0, 92, .2);
+  border: 1px solid #FF005C;
+  color: #FF005C;
+}
+
 
 /* Error Styles */
 .no-text-warning-area{
