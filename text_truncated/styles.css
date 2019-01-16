@@ -1,7 +1,7 @@
 /* Global Styles */
 body{
   /* set global typography */
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
 
   background:#F5F5F7;
@@ -20,6 +20,7 @@ body{
   border: 1px solid #8e8d92;
   margin-bottom: 12px;
   margin-top: 20px;
+
 }
 .form-group{
   margin-bottom: 0;
@@ -149,7 +150,20 @@ hr{
   padding: 12px;
 }
 
-/* Toggle Results */
+/* Results */
 .results-area{
   display: none;
+}
+.result{
+  font-family: big-caslon-fb, serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #0f142c;
+  margin-bottom: 0px;
+  margin-top: 24px;
+}
+.result-description{
+  font-size: 18px
+  color: #15213a;
+  margin-bottom: 24px;
 }
