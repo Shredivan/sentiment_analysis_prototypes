@@ -6,37 +6,68 @@ body{
 
   background:#F5F5F7;
 }
+.card{
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 32px;
+}
 
+/* Form Styles */
 .form-control{
-  border-radius: 4;
+  border-radius: 4px;
+  border: 1px solid #8e8d92;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.form-group{
+  margin-bottom: 0;
 }
 
 /* Navbar */
 .navbar{
-  background: black;
+  background: linear-gradient(
+      to right, #0F142C, #53617F
+  );
   padding: 20px;
   color: white;
   text-decoration: underline;
 }
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
 
 /* Page Introduction */
 .page-header{
-  font-size: 36px;
-  font-weight: bold;
+  font-family: big-caslon-fb, serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  color: #0f142c;
 }
 .page-sub-heading{
-  font-size: 24px;
-  font-weight: regular;
+  font-family: big-caslon-fb, serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  color: #0f142c;
 }
 
 /* Section Titles */
 .section-title{
-  font-size: 24px;
+  font-size: 21px;
   font-weight: bold;
+  margin-bottom: 0;
+  color: #0f142c;
 }
 .section-sub-title{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
+  color: #15213a;
+  margin-bottom: 0;
 }
 
 /* Buttons */
@@ -95,19 +126,19 @@ body{
 
 /* Text & Image — Text Highlight */
 .text-postive{
-  background: green;
+  background: #33dca5;
   padding: 12px;
 }
 .text-negative{
-  background: red;
+  background: #cc2f3d;
   padding: 12px;
 }
 .text-neutral{
-  background: yellow;
+  background: #f3d333;
   padding: 12px;
 }
 
 /* Toggle Results */
 .results-area .results-content{
-  visibility: hidden;
+  display: none;
 }

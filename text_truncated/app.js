@@ -1,20 +1,19 @@
 $(document).ready(function(){
   $('.no-text-warning-area').hide()
+  $('.results-content').hide()
+
   $('.btn-primary').on('click', function(){
     // Check text area has content before showing results
-    // TODO: swap out id for class later or conflicts will emerge with other html file
-    if ($('#exampleFormControlTextarea1').val() == ''){
+    if ($('#text_truncated').val() == ''){
       $('.no-text-warning-area').show()
-
     } else{
-      $('.results-content').css('visibility', 'visible')
+      $('.results-content').show()
       $('.no-text-warning-area').hide()
-
     }
   })
 
   $('.btn-secondary').click(function(){
-    $('#exampleFormControlTextarea1').val('')
+    $('#text_truncated').val('')
   })
 
   $('.page-title-link').click(function(){
