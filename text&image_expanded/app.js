@@ -71,7 +71,10 @@ $(document).ready(function(){
         }]
       }],
       title: {
-          text: 'Fruit consumption'
+          text: 'Fruit consumption',
+          style:{
+            display: 'none'
+          }
       }
     });
   });
