@@ -139,14 +139,17 @@ hr{
 /* Text & Image — Text Highlight */
 
 .text_expanded-analysed-area .text-positive{
+  display: inline-block;
   background: #33dca5;
   padding: 12px;
 }
 .text_expanded-analysed-area .text-negative{
+  display: inline-block;
   background: #cc2f3d;
   padding: 12px;
 }
 .text_expanded-analysed-area .text-neutral{
+  display: inline-block;
   background: #f3d333;
   padding: 12px;
 }
@@ -156,6 +159,7 @@ hr{
 .text_expanded-analysed-area .key-phrase{
   border-bottom: 4px solid black;
 }
+
 
 /* Results */
 .results-area{
