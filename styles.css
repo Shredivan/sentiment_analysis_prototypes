@@ -137,17 +137,24 @@ hr{
 }
 
 /* Text & Image — Text Highlight */
-.text-postive{
+
+.text_expanded-analysed-area .text-positive{
   background: #33dca5;
   padding: 12px;
 }
-.text-negative{
+.text_expanded-analysed-area .text-negative{
   background: #cc2f3d;
   padding: 12px;
 }
-.text-neutral{
+.text_expanded-analysed-area .text-neutral{
   background: #f3d333;
   padding: 12px;
+}
+.text_expanded-analysed-area .text_expanded-analysed{
+  line-height: 100px;
+}
+.text_expanded-analysed-area .key-phrase{
+  border-bottom: 4px solid black;
 }
 
 /* Results */
