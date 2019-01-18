@@ -137,7 +137,6 @@ hr{
 }
 
 /* Text & Image — Text Highlight */
-
 .text_expanded-analysed-area .text-positive{
   display: inline-block;
   background: #33dca5;
@@ -160,6 +159,11 @@ hr{
 .text_expanded-analysed-area .key-phrase{
   border-bottom: 4px solid black;
 }
+.sub-section-title{
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 
 /* Results */
