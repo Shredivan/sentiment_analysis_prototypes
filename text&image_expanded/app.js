@@ -75,6 +75,12 @@ $(document).ready(function(){
           style:{
             display: 'none'
           }
+      },
+      tooltip: {
+          useHTML: true,
+          style: {
+            borderRadius: '4px',
+          }
       }
     });
   });
