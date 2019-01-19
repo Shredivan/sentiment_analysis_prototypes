@@ -70,6 +70,10 @@ body{
   color: #15213a;
   margin-bottom: 0;
 }
+.analysis-heading{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 
 /* Buttons */
 .btn-primary{
@@ -119,6 +123,9 @@ hr{
   margin: 0;
 }
 .ruler-solid{
+  border-color: #8E8D92;
+}
+.ruler-solid-light{
   border-color: #e3e4ea;
 }
 .results-heading-area-ruler{
@@ -156,10 +163,10 @@ hr{
 .text-image_expanded-analysed-area .text_expanded-analysed{
   line-height: 100px;
 }
-.text-image_expanded-analysed-area .key-phrase{
+.text-image_expanded-analysed-area .key-phrase-underline{
   border-bottom: 4px solid black;
 }
-.text_expanded-analysed-area .key-phrase{
+.text_expanded-analysed-area .key-phrase-underline{
   border-bottom: 4px solid black;
   margin-bottom: 0;
 }
@@ -215,16 +222,29 @@ hr{
 .ledgend{
   margin-top: 8px;
 }
-
-.ledgend .positive, .negative, .neutral{
+.text-expanded-ledgend{
+  margin-bottom: 20px;
+}
+.ledgend .key-phrase-symbol{
+  height: 4px;
+  width: 50px;
+  background: #15213A;
   display: inline-block;
 }
-.ledgend .positive, .neutral{
+.ledgend .positive, .negative, .neutral, .key-phrase{
+  display: inline-block;
+}
+.ledgend .positive, .neutral, .negative{
   margin-right: 24px;
 }
 .label-ledgend{
   display: inline-block;
   margin-bottom: 0;
+  font-size: 12px;
+  color: #15213A;
+}
+.primary-emotion{
+  font-weight: 700;
 }
 .dot-positive{
   background: #33dca5;

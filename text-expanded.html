@@ -20,11 +20,6 @@
     <!-- Big Caslon -->
     <link rel="stylesheet" href="https://use.typekit.net/sqp6dry.css">
 
-    <!-- Load Highcharts -->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
-    <script src="https://code.highcharts.com/modules/treemap.js"></script>
-
     <title>Sentiment Analyser</title>
   </head>
   <body>
@@ -82,21 +77,26 @@
             </div>
             <hr class="ruler-solid">
             <h3 class="analysis-heading sub-section-title">Analysis</h3>
+            <hr class="ruler-solid-light">
+            <div class="ledgend text-expanded-ledgend">
+              <p class="label-ledgend">Key Phrase</p>
+              <div class="key-phrase-symbol"></div>
+            </div>
             <div class="text_expanded-analysed-area row">
               <div class="col-md-9">
                 <p class="text_expanded-analysed">
                   <p class="text-sentiment">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                   <p class="sentiment-details">
-                    Positive: 85.0% </br>
+                    <span class="primary-emotion">Positive: 85.0% </span></br>
                     Negative: 10.0% Neutral: 5.0% </br>
                     Entities: Animal
                   </p>
-                  
-                  <p class="key-phrase">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                  <p class="key-phrase-underline">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat.</p>
                   <p class="sentiment-details">
-                    Positive: 85.0% </br>
+                    <span class="primary-emotion">Positive: 85.0% </span> </br>
                     Negative: 10.0% Neutral: 5.0% </br>
                     Entities: Animal
                   </p>
@@ -104,7 +104,7 @@
                   <p class="text-sentiment">Duis aute irure dolor in reprehenderit
                   in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   <p class="sentiment-details">
-                    Positive: 85.0% </br>
+                    <span class="primary-emotion">Positive: 85.0% </span> </br>
                     Negative: 10.0% Neutral: 5.0% </br>
                     Entities: Animal
                   </p>
@@ -112,7 +112,7 @@
                   <p class="text-sentiment">Excepteur sint occaecat cupidatat non proident,
                   sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   <p class="sentiment-details">
-                    Positive: 85.0% </br>
+                    <span class="primary-emotion">Positive: 85.0% </span> </br>
                     Negative: 10.0% Neutral: 5.0% </br>
                     Entities: Animal
                   </p>
@@ -129,6 +129,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script src="treemap.js"></script>
   </body>
 </html>
