@@ -119,6 +119,9 @@ hr{
   margin: 0;
 }
 .ruler-solid{
+  border-color: #8E8D92;
+}
+.ruler-solid-light{
   border-color: #e3e4ea;
 }
 .results-heading-area-ruler{
@@ -215,7 +218,12 @@ hr{
 .ledgend{
   margin-top: 8px;
 }
-
+.ledgend .key-phrase-symbol{
+  height: 4px;
+  width: 50px;
+  background: black;
+  display: inline-block;
+}
 .ledgend .positive, .negative, .neutral{
   display: inline-block;
 }
