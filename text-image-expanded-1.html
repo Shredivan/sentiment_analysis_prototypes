@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--  Custom Styles    -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!-- Big Caslon -->
+    <link rel="stylesheet" href="https://use.typekit.net/sqp6dry.css">
+
+    <!-- Load Highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+
+    <title>Sentiment Analyser</title>
+  </head>
+  <body>
+    <div class="container-fluid navbar">
+      <a href="#" class="page-title-link">Sentiment Analyser</a>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h1 class="page-header">Sentiment Analyser</h1>
+        </div>
+        <div class="col-md-10">
+          <h2 class="page-sub-heading">Automatically analyse the sentiment of pieces of text.</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="form-group-heading section-title">Input Text</h2>
+                </div>
+                <div class="col-md-12">
+                  <label for="text_truncated" class="section-sub-title">Input the text you want to analyse into the field below.</label>
+                </div>
+                <div class="col-md-9">
+                  <textarea class="form-control" id="text_truncated" rows="6"></textarea>
+                </div>
+              </div>
+              <div class= "no-text-warning-area">
+                <p class ='no-text-warning'>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  No text inputted to analyse
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary">Analyse</button>
+              <button type="button" class="btn btn-secondary">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="results-area card results-content">
+            <h2 class="results-heading section-title">Results</h2>
+            <p class="results-sub-heading section-sub-title">Below are the results of your sentiment analysis</p>
+            <hr class="ruler-solid results-heading-area-ruler">
+            <div class="ledgend">
+              <div class="positive">
+                <div class="sentiment-dot-sml dot-positive"></div>
+                <p class="label-ledgend">Positive</p>
+              </div>
+              <div class="neutral">
+                <div class="sentiment-dot-sml dot-neutral"></div>
+                <p class="label-ledgend">Neutral</p>
+              </div>
+              <div class="negative">
+                <div class="sentiment-dot-sml dot-negative"></div>
+                <p class="label-ledgend">Negative</p>
+              </div>
+            </div>
+            <div class="result-text_expanded row">
+              <div class="col-md-4">
+                <div class="sentiment-dot-bg dot-negative" data-toggle="tooltip" data-placement="top" title="Out of positive neutral and negative, negative is the primary sentiment of the text"></div>
+                <p class="result">Negative</p>
+                <p class="result-description">Is the primary sentiment of the text</p>
+              </div>
+              <div class="col-md-8">
+                <div id="treemap-container"></div>
+              </div>
+            </div>
+            <hr class="ruler-solid">
+            <h3 class="analysis-heading sub-section-title">Analysis</h3>
+            <div class="text-image_expanded-analysed-area row">
+              <div class="col-md-9">
+                <p class="text-image_expanded-analysed">
+                  <p class="text-positive" data-toggle="tooltip" title="Out of positive neutral and negatitext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                  <p class="text-negative key-phrase" data-toggle="tooltip" title="text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.</p> <p class="text-positive" data-toggle="tooltip" title="text">Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p class="text-neutral" data-toggle="tooltip" title="text">Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="treemap.js"></script>
+  </body>
+</html>

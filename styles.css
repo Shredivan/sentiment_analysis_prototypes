@@ -137,31 +137,46 @@ hr{
 }
 
 /* Text & Image — Text Highlight */
-.text_expanded-analysed-area .text-positive{
+.text-image_expanded-analysed-area .text-positive{
   display: inline-block;
   background: #33dca5;
   padding: 12px;
 }
-.text_expanded-analysed-area .text-negative{
+.text-image_expanded-analysed-area .text-negative{
   display: inline-block;
   background: #cc2f3d;
   padding: 12px;
   color: white;
 }
-.text_expanded-analysed-area .text-neutral{
+.text-image_expanded-analysed-area .text-neutral{
   display: inline-block;
   background: #f3d333;
   padding: 12px;
 }
-.text_expanded-analysed-area .text_expanded-analysed{
+.text-image_expanded-analysed-area .text_expanded-analysed{
   line-height: 100px;
+}
+.text-image_expanded-analysed-area .key-phrase{
+  border-bottom: 4px solid black;
 }
 .text_expanded-analysed-area .key-phrase{
   border-bottom: 4px solid black;
+  margin-bottom: 0;
 }
 .sub-section-title{
   font-size: 18px;
   font-weight: 500;
+}
+.text-sentiment{
+  border-bottom: 1px solid black;
+  /* text-decoration: underline; */
+  margin-bottom: 0;
+}
+.sentiment-details{
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  margin-bottom: 24px;
 }
 
 
