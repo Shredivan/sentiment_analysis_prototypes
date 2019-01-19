@@ -163,10 +163,10 @@ hr{
 .text-image_expanded-analysed-area .text_expanded-analysed{
   line-height: 100px;
 }
-.text-image_expanded-analysed-area .key-phrase{
+.text-image_expanded-analysed-area .key-phrase-underline{
   border-bottom: 4px solid black;
 }
-.text_expanded-analysed-area .key-phrase{
+.text_expanded-analysed-area .key-phrase-underline{
   border-bottom: 4px solid black;
   margin-bottom: 0;
 }
@@ -231,10 +231,10 @@ hr{
   background: #15213A;
   display: inline-block;
 }
-.ledgend .positive, .negative, .neutral{
+.ledgend .positive, .negative, .neutral, .key-phrase{
   display: inline-block;
 }
-.ledgend .positive, .neutral{
+.ledgend .positive, .neutral, .negative{
   margin-right: 24px;
 }
 .label-ledgend{

@@ -73,20 +73,6 @@
             <h2 class="results-heading section-title">Results</h2>
             <p class="results-sub-heading section-sub-title">Below are the results of your sentiment analysis</p>
             <hr class="ruler-solid results-heading-area-ruler">
-            <div class="ledgend">
-              <div class="positive">
-                <div class="sentiment-dot-sml dot-positive"></div>
-                <p class="label-ledgend">Positive</p>
-              </div>
-              <div class="neutral">
-                <div class="sentiment-dot-sml dot-neutral"></div>
-                <p class="label-ledgend">Neutral</p>
-              </div>
-              <div class="negative">
-                <div class="sentiment-dot-sml dot-negative"></div>
-                <p class="label-ledgend">Negative</p>
-              </div>
-            </div>
             <div class="result-text_expanded row">
               <div class="col-md-4">
                 <div class="sentiment-dot-bg dot-negative" data-toggle="tooltip" data-placement="top" title="Out of positive neutral and negative, negative is the primary sentiment of the text"></div>
@@ -102,9 +88,28 @@
             <hr class="ruler-solid-light">
             <div class="text-image_expanded-analysed-area row">
               <div class="col-md-9">
+                <div class="ledgend">
+                  <div class="positive">
+                    <p class="label-ledgend">Positive</p>
+                    <div class="sentiment-dot-sml dot-positive"></div>
+                  </div>
+                  <div class="neutral">
+                    <p class="label-ledgend">Neutral</p>
+                    <div class="sentiment-dot-sml dot-neutral"></div>
+                  </div>
+                  <div class="negative">
+                    <p class="label-ledgend">Negative</p>
+                    <div class="sentiment-dot-sml dot-negative"></div>
+                  </div>
+                  <div class="key-phrase">
+                    <p class="label-ledgend">Key Phrase</p>
+                    <div class="key-phrase-symbol"></div>
+                  </div>
+                </div>
+
                 <p class="text-image_expanded-analysed">
                   <p class="text-positive" data-toggle="tooltip" title="Out of positive neutral and negatitext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-                  <p class="text-negative key-phrase" data-toggle="tooltip" title="text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <p class="text-negative key-phrase-underline" data-toggle="tooltip" title="text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat.</p> <p class="text-positive" data-toggle="tooltip" title="text">Duis aute irure dolor in reprehenderit
                   in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
