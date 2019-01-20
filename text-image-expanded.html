@@ -73,11 +73,22 @@
             <h2 class="results-heading section-title">Results</h2>
             <p class="results-sub-heading section-sub-title">Below are the results of your sentiment analysis</p>
             <hr class="ruler-solid results-heading-area-ruler">
-            <div class="result-text_expanded row">
+            <div class="result-text-image_expanded row">
               <div class="col-md-4">
+                <p class="primary-result-number">85.1%</p>
                 <div class="sentiment-dot-bg dot-negative" data-toggle="tooltip" data-placement="top" title="Out of positive neutral and negative, negative is the primary sentiment of the text"></div>
-                <p class="result">Negative</p>
-                <p class="result-description">Is the primary sentiment of the text</p>
+                <p class="primary-result-label">Negative</p>
+                <hr class="ruler-dotted">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="secondary-result-number">4.9%</p>
+                    <p class="secondary-result-label">Neutral</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="secondary-result-number">10.0%</p>
+                    <p class="secondary-result-label">Positive</p>
+                  </div>
+                </div>
               </div>
               <div class="col-md-8">
                 <div id="treemap-container"></div>

@@ -128,6 +128,11 @@ hr{
 .ruler-solid-light{
   border-color: #e3e4ea;
 }
+.ruler-dotted{
+  border: 1px dotted #e3e4ea;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 .results-heading-area-ruler{
   margin-top: 12px;
 }
@@ -192,6 +197,42 @@ hr{
 .results-area{
   display: none;
 }
+.result-text-image_expanded{
+  margin-top: 32px;
+}
+.result-text-image_expanded .primary-result-number{
+  font-family: 'Open Sans', serif;
+  font-weight: 800;
+  font-size: 49px;
+  line-height: 48px;
+  color: #0f142c;
+  margin-bottom: 0;
+}
+.result-text-image_expanded .primary-result-label{
+  font-family: big-caslon-fb, serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  color: #0f142c;
+  display: inline-block;
+}
+.result-text-image_expanded .secondary-result-number{
+  font-family: 'Open Sans', serif;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 24px;
+  color: #0f142c;
+  margin-bottom: 0;
+}
+.result-text-image_expanded .secondary-result-label{
+  font-family: big-caslon-fb, serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f142c;
+  display: inline-block;
+}
+
 .result{
   font-family: big-caslon-fb, serif;
   font-weight: 800;
