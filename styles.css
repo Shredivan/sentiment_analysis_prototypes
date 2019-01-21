@@ -251,7 +251,7 @@ hr{
 .result-text_truncated{
   margin-top: 24px;
 }
-.vertical-align-content{
+.vertical-align-middle{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -282,6 +282,7 @@ hr{
   width: 50px;
   background: #15213A;
   display: inline-block;
+  margin-left: 8px;
 }
 .ledgend .positive, .negative, .neutral, .key-phrase{
   display: inline-block;
