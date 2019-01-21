@@ -215,6 +215,7 @@ hr{
   line-height: 48px;
   color: #0f142c;
   display: inline-block;
+  margin-bottom: 0;
 }
 .result-text-image_expanded .secondary-result-number{
   font-family: 'Open Sans', serif;
@@ -250,7 +251,7 @@ hr{
 .result-text_truncated{
   margin-top: 24px;
 }
-.result-text_truncated-area{
+.vertical-align-content{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
