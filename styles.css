@@ -237,9 +237,9 @@ hr{
   font-family: big-caslon-fb, serif;
   font-weight: 800;
   font-size: 48px;
+  /* line-height: 48px; */
   color: #0f142c;
   margin-bottom: 0px;
-  margin-top: 24px;
   display: inline-block;
 }
 .result-description{
@@ -247,12 +247,22 @@ hr{
   color: #15213a;
   margin-bottom: 24px;
 }
+.result-text_truncated{
+  margin-top: 24px;
+}
+.result-text_truncated-area{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 .sentiment-dot-bg{
   height: 20px;
   width: 20px;
   border-radius: 50%;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 .sentiment-dot-sml{
   height: 8px;
