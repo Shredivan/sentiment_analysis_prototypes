@@ -308,3 +308,11 @@ hr{
 .dot-negative{
   background: #cc2f3d;
 }
+
+.tooltip-primary-sentiment{
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
+.tooltip-secondary-content{
+  font-family: 'Open Sans';
+}
