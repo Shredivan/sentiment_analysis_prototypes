@@ -181,8 +181,8 @@ hr{
 }
 .text-sentiment{
   border-bottom: 1px solid black;
-  /* text-decoration: underline; */
   margin-bottom: 0;
+  display: inline-block;
 }
 .sentiment-details{
   font-size: 12px;
