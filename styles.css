@@ -82,6 +82,7 @@ body{
       to right, #FF3C00, #FF005C
   );
   border: 1px solid #FF005C;
+  margin-right: 8px;
 }
 .btn-primary:hover{
   background: linear-gradient(
