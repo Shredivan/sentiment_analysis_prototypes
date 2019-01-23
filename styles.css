@@ -233,6 +233,10 @@ hr{
   line-height: 24px;
   color: #0f142c;
   display: inline-block;
+  margin-bottom: 0;
+}
+.secondary-sentiment-results .sentiment-dot-sml{
+  margin-right: 4px;
 }
 
 .result{
