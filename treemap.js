@@ -30,17 +30,23 @@ $(function () {
           name: 'Negative',
           color: '#cc2f3d'
       }, {
-          name: '',
+          name: 'Positive',
           parent: 'A',
-          value: 5
+          value: 80,
+          entities: 2,
+          keyphrases: 1
       }, {
-          name: '',
+          name: 'Negative',
           parent: 'B',
-          value: 4
+          value: 10,
+          entities: 10,
+          keyphrases: 2
       }, {
-          name: '',
+          name: 'Neutral',
           parent: 'O',
-          value: 4
+          value: 10,
+          entities: 5,
+          keyphrases: 9
       }]
     }],
     title: {
@@ -53,6 +59,10 @@ $(function () {
         useHTML: true,
         style: {
           borderRadius: '4px',
+        },
+        formatter: function(){
+          var html = "<div class='treemap-tooltip-sentiment'> <div class='treemap-tooltip-sentiment-number'>" + this.point.value + "% </div> <div class='treemap-tooltip-sentiment-label'>" + this.point.name + "<br>" + "</div></div> <div class='tremap-tooltip-entities-keyphrases'> Entities: " + this.point.entities + "/5 </div> " + " <div class='tremap-tooltip-entities-keyphrases'> Key Phrases: " + this.point.keyphrases + "/5</div>";
+          return html;
         }
     }
   });
