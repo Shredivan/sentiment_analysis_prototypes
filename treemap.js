@@ -64,6 +64,13 @@ $(function () {
           var html = "<div class='treemap-tooltip-sentiment'> <div class='treemap-tooltip-sentiment-number'>" + this.point.value + "% </div> <div class='treemap-tooltip-sentiment-label'>" + this.point.name + "<br>" + "</div></div> <div class='tremap-tooltip-entities-keyphrases'> Entities: " + this.point.entities + "/5 </div> " + " <div class='tremap-tooltip-entities-keyphrases'> Key Phrases: " + this.point.keyphrases + "/5</div>";
           return html;
         }
+    },
+    plotOptions: {
+      series: {
+        dataLabels: {
+          enabled: false,
+        }
+      }
     }
   });
 });
