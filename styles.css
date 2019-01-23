@@ -337,6 +337,6 @@ hr{
   display: inline-block;
   margin-right: 4px;
 }
-/* text[style="font-size:=11px"]{
+.highcharts-credits{
   display: none;
-} */
+}
