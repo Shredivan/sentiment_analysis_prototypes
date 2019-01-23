@@ -269,6 +269,7 @@ hr{
   border-radius: 50%;
   display: inline-block;
   vertical-align: text-bottom;
+  margin-right: 4px;
 }
 .sentiment-dot-sml{
   height: 8px;
