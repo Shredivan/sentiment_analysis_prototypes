@@ -24,3 +24,4 @@ treemap.js </br>
 - Used only for text-image-expanded
 
 styles.css </br>
+- Needs a feactor but works for now
