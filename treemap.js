@@ -32,17 +32,17 @@ $(function () {
       }, {
           name: 'Positive',
           parent: 'A',
-          value: 80,
+          value: 25,
           entities: 2,
           keyphrases: 1
       }, {
-          name: 'Negative',
+          name: 'neutral',
           parent: 'B',
-          value: 10,
+          value: 65,
           entities: 10,
           keyphrases: 2
       }, {
-          name: 'Neutral',
+          name: 'Negative',
           parent: 'O',
           value: 10,
           entities: 5,

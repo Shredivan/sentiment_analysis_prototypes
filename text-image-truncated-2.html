@@ -62,58 +62,31 @@
           </div>
         </div>
       </div>
-
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="results-area card results-content">
             <h2 class="results-heading section-title">Results</h2>
             <p class="results-sub-heading section-sub-title">Below are the results of your sentiment analysis</p>
             <hr class="ruler-solid results-heading-area-ruler">
-            <div class="result-text_expanded row">
-              <div class="result-text_truncated col-md-12">
-                <p class="result">Neutral</p>
-                <p class="result-description">Is the primary sentiment of the text</p>
+            <div class="ledgend">
+              <div class="positive">
+                <p class="label-ledgend">Positive</p>
+                <div class="sentiment-dot-sml dot-positive"></div>
+              </div>
+              <div class="neutral">
+                <p class="label-ledgend">Neutral</p>
+                <div class="sentiment-dot-sml dot-neutral"></div>
+              </div>
+              <div class="negative">
+                <p class="label-ledgend">Negative</p>
+                <div class="sentiment-dot-sml dot-negative"></div>
               </div>
             </div>
-            <hr class="ruler-solid">
-            <h3 class="analysis-heading sub-section-title">Analysis</h3>
-            <hr class="ruler-solid-light">
-            <div class="ledgend text-expanded-ledgend">
-              <p class="label-ledgend">Key Phrase</p>
-              <div class="key-phrase-symbol"></div>
-            </div>
-            <div class="text_expanded-analysed-area row">
-              <div class="col-md-9">
-                <p class="text_expanded-analysed">
-                  <p class="text-sentiment">Woah!</p>
-                  <p class="sentiment-details">
-                    <span class="primary-emotion">Positive: 60.0% </span></br>
-                    Negative: 0.0%, Neutral: 40.0% </br>
-                  </p>
-
-                  <p class="key-phrase-underline">Well out of order @bbcnickrobinson (who is usually v fair & v good)
-                    interrupting & being rude to @nealerichmond who knows what he’s talking about.</p>
-                  <p class="sentiment-details">
-                    <span class="primary-emotion">Negative: 70.0% </span> </br>
-                    Negative: 10.0%, Neutral: 5.0% </br>
-                    Entities: Person (@bbcnickrobinson, @ealerichmond)
-                  </p>
-
-                  <p class="key-phrase-underline">FGS #Brexit is Britain’s responsibility not Ireland’s.</p>
-                  <p class="sentiment-details">
-                    <span class="primary-emotion">Neutral: 100 % </span> </br>
-                    Negative: 0.0%, Positive: 0.0% </br>
-                    Entities: Location (Britain, Ireland)
-                  </p>
-
-                  <p class="key-phrase-underline">@BBCr4today #Today</p>
-                  <p class="sentiment-details">
-                    <span class="primary-emotion">Neutral: 100.0% </span> </br>
-                    Negative: 0.0%, Positive: 0.0% </br>
-                    Entities: Person (BBCr4), Date(#Today)
-                  </p>
-                </p>
+            <div class="result-text_truncated">
+              <div class="vertical-align-middle">
+                <div class="sentiment-dot-bg dot-negative" data-toggle="tooltip" data-placement="top" title="Out of positive neutral and negative, positive is the primary sentiment of the text"></div><p class="result">Positive</p>
               </div>
+              <p class="result_description">Is the primary sentiment of the text</p>
             </div>
           </div>
         </div>
