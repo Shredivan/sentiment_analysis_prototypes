@@ -20,11 +20,6 @@
     <!-- Big Caslon -->
     <link rel="stylesheet" href="https://use.typekit.net/sqp6dry.css">
 
-    <!-- Load Highcharts -->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
-    <script src="https://code.highcharts.com/modules/treemap.js"></script>
-
     <title>Sentiment Analyser</title>
   </head>
   <body>
@@ -67,70 +62,60 @@
           </div>
         </div>
       </div>
+
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="results-area card results-content">
             <h2 class="results-heading section-title">Results</h2>
             <p class="results-sub-heading section-sub-title">Below are the results of your sentiment analysis</p>
             <hr class="ruler-solid results-heading-area-ruler">
-            <div class="result-text-image_expanded row">
-              <div class="col-md-4">
-                <p class="primary-result-number">85.0%</p>
-                <div class="vertical-align-middle">
-                  <div class="sentiment-dot-bg dot-positive" data-toggle="tooltip" data-placement="top" title="Out of positive neutral and negative, negative is the primary sentiment of the text"></div>
-                  <p class="primary-result-label">Positive</p>
-                </div>
-                <hr class="ruler-dotted">
-                <div class="row secondary-sentiment-results">
-                  <div class="col-md-6">
-                    <p class="secondary-result-number">15.0%</p>
-                    <div class="vertical-align-middle">
-                      <div class="sentiment-dot-sml dot-neutral"></div>
-                      <p class="secondary-result-label">Neutral</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <p class="secondary-result-number">0.0%</p>
-                    <div class="vertical-align-middle">
-                      <div class="sentiment-dot-sml dot-negative"></div>
-                      <p class="secondary-result-label">Negative</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div id="treemap-container"></div>
+            <div class="result-text_expanded row">
+              <div class="result-text_truncated col-md-12">
+                <p class="result">Positive</p>
+                <p class="result-description">Is the primary sentiment of the text</p>
               </div>
             </div>
             <hr class="ruler-solid">
             <h3 class="analysis-heading sub-section-title">Analysis</h3>
             <hr class="ruler-solid-light">
-            <div class="text-image_expanded-analysed-area row">
+            <div class="ledgend text-expanded-ledgend">
+              <p class="label-ledgend">Key Phrase</p>
+              <div class="key-phrase-symbol"></div>
+            </div>
+            <div class="text_expanded-analysed-area row">
               <div class="col-md-9">
-                <div class="ledgend">
-                  <div class="positive">
-                    <p class="label-ledgend">Positive</p>
-                    <div class="sentiment-dot-sml dot-positive"></div>
-                  </div>
-                  <div class="neutral">
-                    <p class="label-ledgend">Neutral</p>
-                    <div class="sentiment-dot-sml dot-neutral"></div>
-                  </div>
-                  <div class="negative">
-                    <p class="label-ledgend">Negative</p>
-                    <div class="sentiment-dot-sml dot-negative"></div>
-                  </div>
-                  <div class="key-phrase">
-                    <div class="vertical-align-middle">
-                      <p class="label-ledgend">Key Phrase</p>
-                      <div class="key-phrase-symbol"></div>
-                    </div>
-                  </div>
-                </div>
+                <p class="text_expanded-analysed">
+                  <p class="text-sentiment">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                  <p class="sentiment-details">
+                    <span class="primary-emotion">Positive: 85.0% </span></br>
+                    Negative: 10.0%, Neutral: 5.0% </br>
+                    Entities: Animal
+                  </p>
 
-                <p class="text-image_expanded-analysed">
-                  <p class="text-positive key-phrase-underline" data-toggle="tooltip" data-html="true" title="<div class='tooltip-primary-sentiment'>85.0% Positive</div><div class='tooltip-secondary-content'>0.0% Negative</div><div class='tooltip-secondary-content'>15.0% Neutral</div><div class='tooltip-secondary-content'>Entities: Person (Vernon Bogdanor)</div>">
-                  Vernon Bogdanor understands the constitution better than anyone else so is always worth listening to.</p>
+                  <p class="key-phrase-underline">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.</p>
+                  <p class="sentiment-details">
+                    <span class="primary-emotion">Positive: 85.0% </span> </br>
+                    Negative: 10.0%, Neutral: 5.0% </br>
+                    Entities: Animal
+                  </p>
+
+                  <p class="text-sentiment">Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p class="sentiment-details">
+                    <span class="primary-emotion">Positive: 85.0% </span> </br>
+                    Negative: 10.0%, Neutral: 5.0% </br>
+                    Entities: Animal
+                  </p>
+
+                  <p class="text-sentiment">Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p class="sentiment-details">
+                    <span class="primary-emotion">Positive: 85.0% </span> </br>
+                    Negative: 10.0%, Neutral: 5.0% </br>
+                    Entities: Animal
+                  </p>
                 </p>
               </div>
             </div>
@@ -144,6 +129,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script src="treemap-2.js"></script>
   </body>
 </html>
