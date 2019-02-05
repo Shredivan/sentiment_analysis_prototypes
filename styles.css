@@ -198,10 +198,15 @@ hr{
 .results-area{
   display: none;
 }
-.result-text-image_expanded{
+.result-text-image_expanded, .result-text_expanded{
   margin-top: 32px;
 }
-.result-text-image_expanded .primary-result-number{
+.result-text_expanded{
+  margin-bottom: 32px;
+}
+
+.result-text-image_expanded .primary-result-number,
+.result-text_expanded .primary-result-number{
   font-family: 'Open Sans', serif;
   font-weight: 800;
   font-size: 49px;
@@ -209,7 +214,8 @@ hr{
   color: #0f142c;
   margin-bottom: 0;
 }
-.result-text-image_expanded .primary-result-label{
+.result-text-image_expanded .primary-result-label,
+.result-text_expanded .primary-result-label{
   font-family: big-caslon-fb, serif;
   font-weight: 800;
   font-size: 48px;
@@ -218,7 +224,8 @@ hr{
   display: inline-block;
   margin-bottom: 0;
 }
-.result-text-image_expanded .secondary-result-number{
+.result-text-image_expanded .secondary-result-number,
+.result-text_expanded .secondary-result-number{
   font-family: 'Open Sans', serif;
   font-weight: 800;
   font-size: 21px;
@@ -226,7 +233,8 @@ hr{
   color: #0f142c;
   margin-bottom: 0;
 }
-.result-text-image_expanded .secondary-result-label{
+.result-text-image_expanded .secondary-result-label,
+.result-text_expanded .secondary-result-label{
   font-family: big-caslon-fb, serif;
   font-weight: 500;
   font-size: 20px;
@@ -234,6 +242,9 @@ hr{
   color: #0f142c;
   display: inline-block;
   margin-bottom: 0;
+}
+.result-text_expanded .secondary-sentiment-results{
+  padding-top: 46px;
 }
 .secondary-sentiment-results .sentiment-dot-sml{
   margin-right: 4px;
