@@ -33,20 +33,20 @@ $(function () {
           name: 'Positive',
           parent: 'A',
           value: 25,
-          entities: 2,
-          keyphrases: 1
+          entities: 0,
+          keyphrases: 0
       }, {
           name: 'Neutral',
           parent: 'B',
           value: 65,
-          entities: 10,
+          entities: 4,
           keyphrases: 2
       }, {
           name: 'Negative',
           parent: 'O',
           value: 10,
-          entities: 5,
-          keyphrases: 9
+          entities: 2,
+          keyphrases: 0
       }]
     }],
     title: {
@@ -61,7 +61,7 @@ $(function () {
           borderRadius: '4px',
         },
         formatter: function(){
-          var html = "<div class='treemap-tooltip-sentiment'> <div class='treemap-tooltip-sentiment-number'>" + this.point.value + "% </div> <div class='treemap-tooltip-sentiment-label'>" + this.point.name + "<br>" + "</div></div> <div class='tremap-tooltip-entities-keyphrases'> Entities: " + this.point.entities + "/5 </div> " + " <div class='tremap-tooltip-entities-keyphrases'> Key Phrases: " + this.point.keyphrases + "/5</div>";
+          var html = "<div class='treemap-tooltip-sentiment'> <div class='treemap-tooltip-sentiment-number'>" + this.point.value + "% </div> <div class='treemap-tooltip-sentiment-label'>" + this.point.name + "<br>" + "</div></div> <div class='tremap-tooltip-entities-keyphrases'> Entities: " + this.point.entities + "/6 </div> " + " <div class='tremap-tooltip-entities-keyphrases'> Key Phrases: " + this.point.keyphrases + "/2</div>";
           return html;
         }
     },

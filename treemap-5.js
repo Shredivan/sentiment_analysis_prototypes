@@ -39,13 +39,13 @@ $(function () {
           name: 'neutral',
           parent: 'B',
           value: 30,
-          entities: 0,
+          entities: 1,
           keyphrases: 0
       }, {
           name: 'Negative',
           parent: 'O',
           value: 70,
-          entities: 3,
+          entities: 5,
           keyphrases: 2
       }]
     }],
