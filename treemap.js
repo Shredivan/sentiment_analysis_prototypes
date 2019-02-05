@@ -36,7 +36,7 @@ $(function () {
           entities: 2,
           keyphrases: 1
       }, {
-          name: 'neutral',
+          name: 'Neutral',
           parent: 'B',
           value: 65,
           entities: 10,
