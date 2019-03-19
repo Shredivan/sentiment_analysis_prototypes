@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   $('[data-toggle="tooltip"]').tooltip()
-  // $('[data-toggle="tooltip"]').tooltip({ container: '.text-negative'})
   $('text_expanded-analysed').tooltip({container: 'span'})
 
   $('.no-text-warning-area').hide()
